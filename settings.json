@@ -1,0 +1,17 @@
+{
+    "colorscheme": "tokyonight-moon",
+    "keymenu": false,
+    "keysequencetimeout": 2000,
+    "linter": false,
+    "lsp.ignoreTriggerCharacters": "",
+    "lsp.server": "python=/home/koen/config/micro/pyrefly-lsp.sh",
+    "lsp.trace": true,
+    "paste": true,
+    "remember_position": true,
+    "statusformatr": "",
+    "divchars": " -",
+    "cursorstyle": "bar-blink",
+    "fakecursor": false,
+    "softwrap": true,
+    "welcome_message": "Welcome to ✦ 𝙼 𝚒 𝚌 𝚛 𝚘 ✦      $(bind:ToggleKeyMenu) $(symbol:statusline.bindings) bindings, $(bind:ToggleHelp) $(symbol:statusline.help) help"
+}

@@ -1,0 +1,22 @@
+2026-04-24 08:24:44 runCommand ms=3.0 ok=true cmd=git -C '/home/koen/config' rev-parse --show-toplevel
+2026-04-24 08:24:44 runCommand ms=2.1 ok=true cmd=git -C '/home/koen/config' ls-files --error-unmatch -- 'micro'
+2026-04-24 08:24:44 runCommand ms=2.0 ok=true cmd=git -C '/home/koen/config' show 'HEAD:micro'
+2026-04-24 08:24:44 runCommand ms=1.8 ok=true cmd=git -C '/home/koen/config' rev-parse --show-toplevel
+2026-04-24 08:24:44 runCommand ms=2.0 ok=true cmd=git -C '/home/koen/config' ls-files --error-unmatch -- 'micro'
+2026-04-24 08:24:44 runCommand ms=2.3 ok=true cmd=git -C '/home/koen/config' show 'HEAD:micro'
+2026-04-24 08:24:44 runCommand ms=1.9 ok=true cmd=git -C '/home/koen/config/micro' rev-parse --show-toplevel
+2026-04-24 08:24:44 runCommand ms=2.0 ok=false cmd=git -C '/home/koen/config/micro' ls-files --error-unmatch -- '.gitignore'
+2026-04-24 08:24:58 runCommand ms=2.5 ok=true cmd=git -C '/home/koen/config' rev-parse --show-toplevel
+2026-04-24 08:24:58 runCommand ms=2.3 ok=true cmd=git -C '/home/koen/config' ls-files --error-unmatch -- 'micro'
+2026-04-24 08:24:58 runCommand ms=2.4 ok=true cmd=git -C '/home/koen/config' show 'HEAD:micro'
+2026-04-24 08:24:58 runCommand ms=2.0 ok=true cmd=git -C '/home/koen/config' rev-parse --show-toplevel
+2026-04-24 08:24:58 runCommand ms=2.0 ok=true cmd=git -C '/home/koen/config' ls-files --error-unmatch -- 'micro'
+2026-04-24 08:24:58 runCommand ms=2.3 ok=true cmd=git -C '/home/koen/config' show 'HEAD:micro'
+2026-04-24 08:25:07 runCommand ms=2.7 ok=true cmd=git -C '/home/koen/config' rev-parse --show-toplevel
+2026-04-24 08:25:07 runCommand ms=2.1 ok=true cmd=git -C '/home/koen/config' ls-files --error-unmatch -- 'micro'
+2026-04-24 08:25:07 runCommand ms=2.3 ok=true cmd=git -C '/home/koen/config' show 'HEAD:micro'
+2026-04-24 08:25:07 runCommand ms=1.9 ok=true cmd=git -C '/home/koen/config' rev-parse --show-toplevel
+2026-04-24 08:25:07 runCommand ms=1.9 ok=true cmd=git -C '/home/koen/config' ls-files --error-unmatch -- 'micro'
+2026-04-24 08:25:07 runCommand ms=2.3 ok=true cmd=git -C '/home/koen/config' show 'HEAD:micro'
+2026-04-24 08:25:07 runCommand ms=1.9 ok=true cmd=git -C '/home/koen/config/micro' rev-parse --show-toplevel
+2026-04-24 08:25:07 runCommand ms=2.1 ok=false cmd=git -C '/home/koen/config/micro' ls-files --error-unmatch -- '.gitignore'

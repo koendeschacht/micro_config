@@ -1,0 +1,9 @@
+include "dracula-tc"
+
+color-link cursor-line "#303240,#F8F8F2"
+color-link autocomplete.popup "#1F2330,#A8DCE2"
+color-link autocomplete.selected "#1F2330,#6AAFD1"
+color-link diagnostic.popup "#26112D,#E1A3DA"
+color-link diagnostic.error "#34103F,#E1A3DA"
+color-link diagnostic.warning "#4A1F24,#E4A7C4"
+color-link diagnostic.info "#26112D,#E1A3DA"
