@@ -46,7 +46,6 @@
     "<leader>sw": "command:toggle softwrap",
     "<leader>tf": "command:pytestfile",
     "<leader>tn": "command:pytestnode",
-    "<leader>tr": "command:pytestretry",
     "<leader>vc": "SelectObjectClass",
     "<leader>vf": "SelectObjectFunction",
     "<leader>vp": "SelectObjectParagraph",
