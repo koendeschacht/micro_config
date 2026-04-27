@@ -1,7 +1,7 @@
 {
     "<leader>cf": "command:format",
     "<leader>cq": "command:lsprestart",
-    "<leader>cr": "command-edit:rename ",
+    "<leader>cr": "command-edit:rename {cursor-word}",
     "<leader>gB": "command:gitdiffblameclose",
     "<leader>gb": "command:gitdiffblame",
     "<leader>gc": "command:gitdiffclose",
