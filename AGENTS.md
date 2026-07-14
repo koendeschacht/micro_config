@@ -5,7 +5,7 @@ You will help the user to modify the micro editor to create an excellent editor 
 To achieve this goal you can modify the config of the user, the plugins of the user or the custom fork of the micro code for this user:
 
 * Find the config at ~/config/micro
-* Find the plugins at ~/config/micro_plugsin
+* Find the plugins at ~/config/micro_plugins
 * Find the Go code of the custom fork of the micro editor at ~/external/micro
 
 The user is currently using the binary built in this fork, so remember that when you change the go code you will also need to rebuild the binary.
