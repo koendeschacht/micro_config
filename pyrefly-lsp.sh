@@ -1,3 +1,7 @@
 #!/bin/sh
 
-exec /home/koen/.local/bin/pyrefly lsp "$@" 2>>/tmp/pyrefly-lsp.stderr.log
+if [ -x .venv/bin/pyrefly ]; then
+    exec .venv/bin/pyrefly lsp "$@"
+fi
+
+exec /home/koen/.local/bin/pyrefly lsp "$@"

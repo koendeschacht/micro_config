@@ -41,7 +41,7 @@
     "<leader>nl": "command-edit:goto ",
     "<leader>rf": "command:uvrunfile",
     "<leader>ra": "command:copyabspath",
-    "<leader>rp": "command:copyrelpath",
+    "<leader>p": "command:copyrelpath",
     "<leader>rt": "command:kittyterm",
     "<leader>sr": "ToggleRuler",
     "<leader>sw": "command:toggle softwrap",

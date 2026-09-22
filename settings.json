@@ -2,7 +2,7 @@
     "colorscheme": "tokyonight-moon",
     "cursorstyle": "bar-blink",
     "divchars": " -",
-    "keysequencetimeout": 2000,
+    "keysequencetimeout": 4000,
     "linter": false,
     "lsp.ignoreTriggerCharacters": "",
     "lsp.server": "python=/home/koen/config/micro/pyrefly-lsp.sh",
@@ -10,7 +10,7 @@
     "paste": true,
     "remember_position": true,
     "softwrap": true,
-    "statusformatl": "$(statuspath.display) $(modified)$(overwrite)($(line),$(col)) | $(symbol:statusline.encoding) $(opt:encoding)",
+    "statusformatl": "$(statuspath.display) $(modified)$(overwrite)($(line),$(col)) | $(lsp.referenceindexstatus) ",
     "statusformatr": "$(gitstatus.branchstate)",
     "welcome_message": "Welcome to ✦ 𝙼 𝚒 𝚌 𝚛 𝚘 ✦      $(bind:ToggleKeyMenu) $(symbol:statusline.bindings) bindings, $(bind:ToggleHelp) $(symbol:statusline.help) help"
 }
