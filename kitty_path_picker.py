@@ -96,7 +96,7 @@ def _render_line(line, paths, width):
     return "".join(output), click_ranges
 
 
-def _draw(lines, paths_by_line, rows, columns, typed, message=""):
+def _draw(lines, paths_by_line, rows, columns):
     """Redraw the source screen, with labels inserted before clickable paths."""
     sys.stdout.write("\x1b[H\x1b[2J")
     click_ranges = {}
@@ -109,12 +109,6 @@ def _draw(lines, paths_by_line, rows, columns, typed, message=""):
             sys.stdout.write("\r\n")
         if ranges:
             click_ranges[row + 1] = ranges
-    hint = "Path picker"
-    if typed:
-        hint += f": {typed}"
-    if message:
-        hint += f" — {message}"
-    sys.stdout.write(f"\x1b]2;{hint}\x07")
     sys.stdout.flush()
     return click_ranges
 
@@ -137,9 +131,7 @@ def _run_picker(screen):
     size = os.get_terminal_size()
     rows, columns = size.lines, size.columns
     typed = ""
-    message = "Type 00–99, or click a path"
-    click_ranges = _draw(lines, paths_by_line, rows, columns, typed, message)
-    message = ""
+    click_ranges = _draw(lines, paths_by_line, rows, columns)
     deadline = None
     pending = ""
 
@@ -178,7 +170,6 @@ def _run_picker(screen):
                         selected = _selected_path(paths, typed)
                         if selected is not None:
                             return json.dumps(selected)
-                        message = "No matching path"
                     elif char in "\x7f\b":
                         typed = typed[:-1]
                         deadline = time.monotonic() + _SINGLE_DIGIT_DELAY if typed else None
@@ -188,15 +179,13 @@ def _run_picker(screen):
                         if len(typed) == 2:
                             if selected is not None:
                                 return json.dumps(selected)
-                            message = "No matching path"
                             typed = ""
                             deadline = None
                         else:
                             deadline = time.monotonic() + _SINGLE_DIGIT_DELAY
                     else:
                         continue
-                    click_ranges = _draw(lines, paths_by_line, rows, columns, typed, message)
-                    message = ""
+                    click_ranges = _draw(lines, paths_by_line, rows, columns)
         finally:
             termios.tcsetattr(terminal.fileno(), termios.TCSADRAIN, original_mode)
             sys.stdout.write("\x1b[?1000l\x1b[?1006l\x1b[?25h\x1b[0m")

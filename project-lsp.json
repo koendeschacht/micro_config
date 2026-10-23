@@ -1,0 +1,11 @@
+{
+    "james": {
+        "sourceRoots": [
+            "apps/*/src",
+            "devtools/*/src",
+            "libs/*/src",
+            "libs/*/src-py",
+            "tests/*/src"
+        ]
+    }
+}
